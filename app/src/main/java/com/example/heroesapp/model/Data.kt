@@ -5,7 +5,7 @@ import com.example.heroesapp.R
 object HeroesRepository {
     val heroes = listOf(
 
-       Hero(
+        Hero(
             nameRes = R.string.Hero00,
             descriptionRes = R.string.description00,
             imageRes = R.drawable.mummy
@@ -39,6 +39,11 @@ object HeroesRepository {
             nameRes = R.string.hero6,
             descriptionRes = R.string.description6,
             imageRes = R.drawable.android_superhero6
+        ),
+        Hero(nameRes = R.string.Hero_Me,
+        descriptionRes = R.string.descritionMe,
+        imageRes = R.drawable.sila
         )
+
     )
 }
