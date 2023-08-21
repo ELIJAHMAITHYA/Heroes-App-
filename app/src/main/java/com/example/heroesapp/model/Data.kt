@@ -40,9 +40,10 @@ object HeroesRepository {
             descriptionRes = R.string.description6,
             imageRes = R.drawable.android_superhero6
         ),
-        Hero(nameRes = R.string.Hero_Me,
-        descriptionRes = R.string.descritionMe,
-        imageRes = R.drawable.sila
+        Hero(
+            nameRes = R.string.Hero_Me,
+            descriptionRes = R.string.descritionMe,
+            imageRes = R.drawable.sila
         )
 
     )
