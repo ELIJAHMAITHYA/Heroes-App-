@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Heroes App</string>
+    <string name="Hero00">Mummy Cathy✨❤️</string>
+    <string name="description00"> Our Hero Very Supportive, Educative , always Advising</string>
     <string name="hero1">Nick the Night and Day</string>
     <string name="description1">The Jetpack Hero</string>
     <string name="hero2">Reality Protector</string>

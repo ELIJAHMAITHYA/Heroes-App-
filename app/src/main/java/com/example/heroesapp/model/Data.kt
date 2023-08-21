@@ -4,6 +4,12 @@ import com.example.heroesapp.R
 
 object HeroesRepository {
     val heroes = listOf(
+
+       Hero(
+            nameRes = R.string.Hero00,
+            descriptionRes = R.string.description00,
+            imageRes = R.drawable.mummy
+        ),
         Hero(
             nameRes = R.string.hero1,
             descriptionRes = R.string.description1,

@@ -2,6 +2,7 @@ package com.example.heroesapp.model
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -31,38 +32,39 @@ fun heroItem(
     modifier: Modifier
 ) {
     Card(
-        modifier = Modifier,
-        elevation = CardDefaults.cardElevation(defaultElevation = 2.dp)
+        elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
+        modifier = modifier,
     ) {
         Row(
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(16.dp)
                 .sizeIn(minHeight = 72.dp)
-
         ) {
-            Text(text = stringResource(hero.nameRes),
-                style = MaterialTheme.typography.displayMedium
-            )
-            Text(text = stringResource(hero.descriptionRes),
-                style = MaterialTheme.typography.bodyLarge
-            )
-            Spacer(modifier = Modifier.width(16.dp))
-            Box (
-               modifier= Modifier
-                   .size(72.dp)
-                   .clip(RoundedCornerShape(16.dp))
-                    ){
-                Image(
-                    painter = painterResource(hero.imageRes) ,
-                    contentDescription = null,
-                   alignment= Alignment.TopCenter,
-                    contentScale = ContentScale.FillWidth
+            Column(modifier = Modifier.weight(1f)) {
+                Text(
+                    text = stringResource(hero.nameRes),
+                    style = MaterialTheme.typography.displaySmall
+                )
+                Text(
+                    text = stringResource(hero.descriptionRes),
+                    style = MaterialTheme.typography.bodyLarge
+                )
+            }
+            Spacer(Modifier.width(16.dp))
+            Box(
+                modifier = Modifier
+                    .size(72.dp)
+                    .clip(RoundedCornerShape(8.dp))
 
+            ) {
+                Image(
+                    painter = painterResource(hero.imageRes),
+                    contentDescription = null,
+                    alignment = Alignment.TopCenter,
+                    contentScale = ContentScale.FillWidth
                 )
             }
         }
-
-
     }
 }
